@@ -11,13 +11,13 @@
   display: inline-block;
   margin-bottom: 0.25em;
   padding: 0.5em 1em;
-  color: #014638 !important;
+  color: #D7DADC !important;
   font-family: $sans-serif;
   font-size: $type-size-6;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: $primary-color;
+  background-color: #014638;
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
@@ -150,4 +150,29 @@
   &--small {
     font-size: $type-size-7;
   }
+}
+
+/* Custom Styles for Social Links and Follow Button */
+#socialLinks {
+  display: none;  // Make it hidden by default
+  background-color: #2c2c2e;
+  color: #D7DADC;
+  padding: 10px;
+  border: 2px solid #014638;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#socialLinks li {
+  margin: 5px 0;
+}
+
+#socialLinks a {
+  color: #A8D8B9; // This color should match your site's design.
+  text-decoration: none;
+}
+
+#socialLinks a:hover {
+  color: mix(#000, #FFAA00, 33%);
+  text-decoration: underline;
 }
