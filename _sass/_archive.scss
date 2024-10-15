@@ -59,7 +59,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: $type-size-55;
 
   & + p {
     text-indent: 0;
@@ -101,6 +101,13 @@
   @include breakpoint($x-large) {
     padding-right: $right-sidebar-width-wide;
   }
+
+// Add styles for the line between items
+&:not(:last-child) {
+  border-bottom: 1px dotted #D7DADC80; // Change the color to suit your design
+  padding-bottom: 0px; // Add spacing below the item
+  margin-bottom: 0px; // Add spacing between the line and the next item
+}
 
   .page__meta {
     margin: 0 0 4px;

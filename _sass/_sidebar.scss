@@ -42,12 +42,12 @@
   }
 
   h3, h4 {
-    font-size: $type-size-5;
+    font-size: $type-size-55;
   }
 
   p, li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-55;
     line-height: 1.5;
   }
 
@@ -95,7 +95,7 @@
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 0px solid $border-color;
     }
   }
 }
@@ -125,13 +125,21 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-3;
+  font-style: bold;
+}
+
+.sidebar .author__bio {
+  font-family: $sans-serif;
+  font-size: $type-size-4;
+  font-style: italic;
 }
 
 .sidebar .author__desktop {
   display: none;
   @media screen and (min-width: 1024px) {
-    display: block;
+    display: flex;
+    margin: 0;
   }
 }
 
@@ -241,10 +249,12 @@
 
   li {
     white-space: nowrap;
+    display: flex; /* Ensures icons and text align on the same line */
+    align-items: center; /* Centers items vertically */
   }
 
   a {
-    display: block;
+    display: inline-flex;
     margin-bottom: 5px;
     padding-right: 5px;
     padding-top: 2px;
@@ -252,9 +262,11 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
+    align-items: center;
 
     &:hover {
       text-decoration: underline;
+      color: $link-color-hover;
     }
   }
 }

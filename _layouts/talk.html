@@ -21,6 +21,8 @@ layout: default
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.venue %}<meta itemprop="venue" content="{{ page.venue | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.location %}<meta itemprop="location" content="{{ page.location | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
 
     <div class="page__inner-wrap">
@@ -30,13 +32,20 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
-        {% if page.modified %}
+          {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+        
+        {% if page.venue %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-location-dot" aria-hidden="true"></i>Venue:</strong> {{ page.venue }}</p>
+        {% endif %}
 
+        {% if page.location %}
+        <p class="page__date"><strong><i class="fa fa-fw fa-map-location-dot" aria-hidden="true"></i>Location:</strong> {{ page.location }}</p>
+        {% endif %}
+        
         </header>
       {% endunless %}
 

@@ -9,37 +9,32 @@ redirect_from:
 
 {% include base_path %}
 
+<i>You can find a copy of my CV <a href="/files/cv.pdf">here</a>.</i>
+
+<u>Below is a short summary</u>
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* <strong>PhD in Social Sciences, Vrije Universiteit Amsterdam, 2018-2024</strong>
+  * Visiting PhD Candidate in Social Psychology, University of Queensland, 2022
+* Research MSc (cum laude) in Social Psychology, Vrije Universiteit Amsterdam, 2016-2018
+* BSc (cum laude) in Psychology, Vrije Universiteit Amsterdam, 2013-2016 
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* <strong>2024-Now: Post-Doctoral Research in Behavioral Ethics</strong>
+  * <strong>University of Amsterdam</strong>
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2021: Internship Policy Officer
+  * Nederlandse Organisatie voor Wetenschappelijk Onderzoek
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+* 2017-2018: Workgroup Teacher Methods & Statistics
+  * Vrije Universiteit Amsterdam
+
+Service
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2020-2024: PhD Student-Representative
+  * Kurt Lewin Institute
 
 Publications
 ======
@@ -47,18 +42,17 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Selected talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+{% comment %}
+ Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+{% endcomment %}
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams

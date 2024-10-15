@@ -4,7 +4,7 @@
 
 .masthead {
   position: fixed;
-  background: white;
+  background: #014638;
   border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;
@@ -54,5 +54,6 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    font-size: $type-size-4;
   }
 }

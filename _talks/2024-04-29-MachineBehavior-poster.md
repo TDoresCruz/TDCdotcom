@@ -1,0 +1,39 @@
+---
+title: "When can Humans-in-the-Loop Create Rather Than Mitigate Bias in Algorithms"
+collection: talks
+type: "Poster"
+permalink: /talks/2024-04-29-MachineBehavior-poster
+venue: "Machine+Behavior Conference"
+date: 2024-04-29 
+excerpt: "" #always leave empty
+location: "Berlin, Germany" #type below if want to add smth
+---
+
+<small><i>Recommended citation:</i> Dores Cruz, T. D., Starke, C., Köbis, N. C.,  Rosenbaum, D., & Shalvi S. (2024, April 29). When can Humans-in-the-Loop Create Rather Than Mitigate Bias in Algorithms, Machine+Behavior Conference, Berlin, Germany.</small>
+
+<strong>Abstract:</strong>
+
+Recent examples of algorithms or AI leading to biased decisions are plentiful ranging from hiring decisions, medical decisions, judicial decisions, and financial decisions1,2. These biases commonly stem from training the models on data that reflects inherently the biases we humans have2,3. Somewhat paradoxically, incorporating further human decision-making in the AI process is a prominent strategy to mitigate such bias stemming. This is known as a “human-in-the-loop”, who provides feedback that can correct bias in the algorithm4. While it is argued that humans are able to remove bias and improve algorithm accuracy, a plethora of research shows humans themselves suffer from cognitive biases5, especially when decisions are associated with different ideological preferences. For example, in the United States, ideological differences between democrats and republicans can underlie wide gaps in perception and decision-making about the veracity of news, racial disparities in hiring, and morality6–8. It is these politically charged domains that the most impactful algorithmic decision are being made in9,10. Current work on mitigating such biases has focused on the human-in-the-loop serving as a key tool to mitigate bias4 while the risk of the human-in-the-loop as bias source of bias due to differences in political orientation has been overlooked. 
+
+To address this, we propose a behavioral research paradigm testing the hypothesis that the political orientation of a human-in-the-loop can lead to biased feedback decisions that lead to biased algorithms. Given that the outcomes of algorithmic decision can align or not align with the ideological preferences of the human-in-the-loop, it possible that certain decisions could be associated with more preferred outcomes, such as reducing versus maintaining racial disparities (e.g., in hiring6). This means that humans-in-the-loop face other considerations than only accuracy that could shape their decisions when training the algorithm. Thus, investigating how human-in-the-loop make decisions in ideologically charged settings based on their political orientation will elucidate when a human-in-the-loop approach can create versus mitigate algorithmic bias.
+
+One particularly important domain in which algorithmic decision-making and bias stemming from political orientations intersect is hiring. democrats and republicans differences strongly in perceptions of race discrimination between white/Caucasian and black/African American people between democrats and republicans and the support for (hiring) policies favoring black/African American does not change (democrats preferred those policies more than republicans) even if informed with facts6. In hiring, partisan differences can be revealed by democrats preferring reducing discrimination or bias that can harm minority candidates while republicans would prefer to favor majority candidates. As such, a human-in-the-loop can exacerbate or create biases themselves due to motivated cognition leading choices for the algorithm that align with their own political preferences 11,12.  
+
+Here, we propose to conduct a first study that uses a hiring decision task to measure the effect of political orientation algorithmic decision involving a human-in-the-loop. The basic design of the proposed study is a hiring decision task in which the goal is to indicate which of two candidates is to be hired for a position. Participants will be informed that an algorithm has done this task, and the participants are instructed that they are making a final decision. Specifically, participants will be presented with information about the two candidates and the decision of the algorithm. The information about the candidates includes their ethnicity and a comprehensive potential score based on relevant experience, higher education, and test scores. The candidates can be of either white/Caucasian ethnicity and one candidate of black/African American ethnicity. The scores can range from A+ to B-. Participants can accept and select candidates indicated by the algorithm or reject the decision by selecting the other candidate. This provides insight into the decisions humans take based on AI recommendations as well as how these decisions as feedback to the algorithm.
+
+We are currently aiming to investigate three factors: (1) the difference between the candidates relevant scores to be zero, small, or large in either direction, (2) the instructions for participants to focus on either performance or debiasing, and (3) the context in initial bias towards either group. We further aim to build on our behavioral paradigm to investigate other forms of bias, such as bias stemming from incentives. We also aim to study factors that influence overruling algorithmic versus human decisions with different sources.
+Taken together, we believe this design affords the first step into investigating how the humans can not only mitigate but also create bias in algorithms by acting as humans-in-the-loop. By systematically investigating how differences between individuals shape the outcomes and development of algorithmic decision making, we can build towards understanding of the risks and benefits of human-in-the-loop decision processes that considers human bias stemming from politics and beyond.
+
+References
+1.	Obermeyer, Z., Powers, B., Vogeli, C. & Mullainathan, S. Dissecting racial bias in an algorithm used to manage the health of populations. Science 366, 447–453 (2019).
+2.	Morewedge, C. K. et al. Human bias in algorithm design. Nat. Hum. Behav. 7, 1822–1824 (2023).
+3.	Caliskan, A., Bryson, J. J. & Narayanan, A. Semantics derived automatically from language corpora contain human-like biases. Science 356, 183–186 (2017).
+4.	Mosqueira-Rey, E., Hernández-Pereira, E., Alonso-Ríos, D., Bobes-Bascarán, J. & Fernández-Leal, Á. Human-in-the-loop machine learning: a state of the art. Artif. Intell. Rev. 56, 3005–3054 (2023).
+5.	Tversky, A. & Kahneman, D. Judgment under Uncertainty: Heuristics and Biases. Science 185, 1124–1131 (1974).
+6.	Haaland, I. & Roth, C. Beliefs about Racial Discrimination and Support for Pro-Black Policies. Rev. Econ. Stat. 105, 40–53 (2023).
+7.	Lo Iacono, S. & Dores Cruz, T. D. Hostile media perception affects news bias, but not news sharing intentions. R. Soc. Open Sci. 9, (2022).
+8.	Kivikangas, J. M., Fernández-Castilla, B., Järvelä, S., Ravaja, N. & Lönnqvist, J.-E. Moral foundations and political orientation: Systematic review and meta-analysis. Psychol. Bull. 147, 55–94 (2021).
+9.	Rahwan, I. et al. Machine behaviour. Nature 568, 477–486 (2019).
+10.	Starke, C., Baleis, J., Keller, B. & Marcinkowski, F. Fairness perceptions of algorithmic decision-making: A systematic review  of the empirical literature. Big Data Soc. 9, 20539517221115189 (2022).
+11.	Köbis, N., Bonnefon, J.-F. & Rahwan, I. Bad machines corrupt good morals. Nat. Hum. Behav. 5, 679–685 (2021).
+12.	Hughes, B. L. & Zaki, J. The neuroscience of motivated cognition. Trends Cogn. Sci. 19, 62–64 (2015).

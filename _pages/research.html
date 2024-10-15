@@ -1,0 +1,42 @@
+---
+layout: archive
+title: "Research lines"
+permalink: /research/
+author_profile: true
+---
+
+<div class="research-cards">
+  {% for post in site.research %}
+    <div class="research-card">
+      <h3>{{ post.title }}</h3>
+      <desc>{{ post.description }}</desc>
+      <h4>Work in Progress:</h4>
+      <ul>
+        {% for item in post.wip-list %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      
+      {% if post.selected_publications %}
+        <h4>Selected Publication:</h4>
+        <ul>
+          {% for pub in post.selected_publications %}
+            <li><a href="{{ pub }}">{{ post.selected_publication_ref }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if post.selected_talks %}
+        <h4>Selected Talk:</h4>
+        <ul>
+          {% for talk in post.selected_talks %}
+            <li><a href="{{ talk }}">{{ post.selected_talk_ref }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+
+
