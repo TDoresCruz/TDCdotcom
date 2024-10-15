@@ -12,7 +12,7 @@ title                    : "Dr. Terence Daniel Dores Cruz"
 title_separator          : "-"
 name                     : &name "Terence D. Dores Cruz"
 description              : &description "Personal Website for Terence Dores Cruz"
-url                      : "http://localhost:4000" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://terencedorescruz.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "TDoresCruz/TDCdotcom.github.io"
 
