@@ -196,8 +196,8 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: $primary-color;
-    color: #fff;
+    background-color: #2c2c2e;
+    color: #014638;
     cursor: pointer;
     z-index: 100;
   }
@@ -259,8 +259,8 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    background: #2c2c2e;
+    box-shadow: 0 0 10px rgba(#2c2c2e, 0.25);
 
     a {
       margin: 0;
@@ -268,8 +268,8 @@
       font-size: $type-size-5;
 
       &:hover {
-        color: $masthead-link-color-hover;
-        background: mix(#fff, $primary-color, 75%);
+        color: mix(#000, #FFAA00, 33%);
+        background: mix(#2c2c2e, $primary-color, 75%);
       }
     }
 
@@ -294,7 +294,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: #2c2c2e transparent;
       display: block;
       z-index: 1;
     }

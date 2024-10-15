@@ -21,8 +21,18 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+    <button class="btn btn--inverse" onclick="toggleLinks()" >Contact & Links</button>
+    <script>
+      function toggleLinks() {
+        var links = document.getElementById("socialLinks");
+        if (links.style.display === "none" || links.style.display === "") {
+          links.style.display = "block";
+        } else {
+          links.style.display = "none";
+        }
+      }
+    </script>
+    <ul id="socialLinks" class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
