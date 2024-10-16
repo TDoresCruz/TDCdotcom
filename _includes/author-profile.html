@@ -25,22 +25,10 @@
     <script>
       function toggleLinks() {
         var links = document.getElementById("socialLinks");
-        var isDesktop = window.matchMedia("(min-width: 768px)").matches; // Adjust breakpoint as needed
-  
-        if (isDesktop) {
-          // On desktops, toggle 'visible' class to keep the content visible
-          if (links.classList.contains("visible")) {
-            links.classList.remove("visible");
-          } else {
-            links.classList.add("visible");
-          }
+        if (links.style.display === "none" || links.style.display === "") {
+          links.style.display = "block !important";
         } else {
-          // On mobile, use display property to toggle visibility
-          if (links.style.display === "none" || links.style.display === "") {
-            links.style.display = "block";
-          } else {
-            links.style.display = "none";
-          }
+          links.style.display = "none";
         }
       }
     </script>
