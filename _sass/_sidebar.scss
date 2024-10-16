@@ -176,10 +176,6 @@
     }
   }
 
-  @include breakpoint($large) {
-    display: block;
-  }
-
   button {
     margin-bottom: 0;
     }
@@ -201,7 +197,7 @@
   cursor: default;
 
   @include breakpoint($large) {
-    display: block;
+    display: block !important;
     position: relative;
     margin: 0;
     padding: 0;
@@ -228,7 +224,7 @@
   }
 
   &:after {
-    display: block;
+    display: block !important;
     content: "";
     position: absolute;
     top: -10px;

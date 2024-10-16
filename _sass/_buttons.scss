@@ -178,12 +178,14 @@
   text-decoration: underline;
 }
 
-  /* Add a 'visible' class for desktop view to keep the links visible */
-#socialLinks.visible {
- display: block !important;
+#toggleButton {
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
-  /* Ensure the links are hidden initially for both mobile and desktop */
-#socialLinks {
-  display: none;
+@media (max-width: 768px) {
+  #socialLinks {
+    display: none;
+  }
 }
