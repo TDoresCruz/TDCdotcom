@@ -177,3 +177,13 @@
   color: mix(#000, #FFAA00, 33%);
   text-decoration: underline;
 }
+
+  /* Add a 'visible' class for desktop view to keep the links visible */
+#socialLinks.visible {
+ display: block !important;
+}
+
+  /* Ensure the links are hidden initially for both mobile and desktop */
+#socialLinks {
+  display: none;
+}

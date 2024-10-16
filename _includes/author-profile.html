@@ -25,14 +25,26 @@
     <script>
       function toggleLinks() {
         var links = document.getElementById("socialLinks");
-        if (links.style.display === "none" || links.style.display === "") {
-          links.style.display = "block";
+        var isDesktop = window.matchMedia("(min-width: 768px)").matches; // Adjust breakpoint as needed
+  
+        if (isDesktop) {
+          // On desktops, toggle 'visible' class to keep the content visible
+          if (links.classList.contains("visible")) {
+            links.classList.remove("visible");
+          } else {
+            links.classList.add("visible");
+          }
         } else {
-          links.style.display = "none";
+          // On mobile, use display property to toggle visibility
+          if (links.style.display === "none" || links.style.display === "") {
+            links.style.display = "block";
+          } else {
+            links.style.display = "none";
+          }
         }
       }
     </script>
-    <ul id="socialLinks" class="author__urls social-icons">
+    <ul id="socialLinks" class="author__urls social-icons" style="display: none;">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
