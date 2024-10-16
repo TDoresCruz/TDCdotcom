@@ -3,7 +3,7 @@ title: "Human Bias in Oversight Increases Algorithmic Bias"
 collection: talks
 type: "Talk & Poster"
 permalink: /talks/2024-10-23-ReshapingWork-talkposter
-venue: "Reshaping Work 2024 Conference: AI@Work"
+venue: "Reshaping Work 2024 Conference: AI at Work"
 date: 2024-10-23 
 excerpt: "" #always leave empty
 location: "Amsterdam, The Netherlands" #type below if want to add smth
