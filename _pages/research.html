@@ -5,11 +5,15 @@ permalink: /research/
 author_profile: true
 ---
 
+{% assign sorted = site.research | sort: "order" %}
+
 <div class="research-cards">
-  {% for post in site.research %}
-    <div class="research-card">
+  {% for post in sorted %}
+    <div class="research-card {% if post.featured %}featured{% endif %}">
+      
       <h3>{{ post.title }}</h3>
-      <desc>{{ post.description }}</desc>
+      <p>{{ post.description }}</p>
+
       <h4>Work in Progress:</h4>
       <ul>
         {% for item in post.wip-list %}
@@ -21,7 +25,9 @@ author_profile: true
         <h4>Selected Publication:</h4>
         <ul>
           {% for pub in post.selected_publications %}
-            <li><a href="{{ pub }}">{{ post.selected_publication_ref }}</a></li>
+            <li>
+              <a href="{{ pub }}">{{ post.selected_publication_ref }}</a>
+            </li>
           {% endfor %}
         </ul>
       {% endif %}
@@ -30,13 +36,13 @@ author_profile: true
         <h4>Selected Talk:</h4>
         <ul>
           {% for talk in post.selected_talks %}
-            <li><a href="{{ talk }}">{{ post.selected_talk_ref }}</a></li>
+            <li>
+              <a href="{{ talk }}">{{ post.selected_talk_ref }}</a>
+            </li>
           {% endfor %}
         </ul>
       {% endif %}
+
     </div>
   {% endfor %}
 </div>
-
-
-

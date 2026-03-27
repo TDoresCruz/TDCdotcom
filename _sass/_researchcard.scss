@@ -1,55 +1,53 @@
 .research-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between cards */
-  justify-content: space-between; /* Spread items evenly */
-  width: 100%; /* Full container width */
-  box-sizing: border-box; /* Include padding and borders in container width */
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .research-card {
-  background-color: #01463880; /* Card background color */
-  color: #D7DADC; /* Text color */
+  background-color: #01463880;
+  color: #D7DADC;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  flex: 1 1 48%; /* Ensure two cards fit per row with flexibility */
-  box-sizing: border-box; /* Prevent padding from increasing the width */
-  margin-bottom: 1px; /* Space below cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  flex: 0 0 calc(50% - 10px); /* two columns */
+  box-sizing: border-box;
 }
 
+/* ✅ Featured card full width */
+.research-card.featured {
+  flex: 0 0 100%;
+}
 
-  .research-card desc {
-    font-size: 18px; /* Adjust the size as needed */
-  }
+/* Typography */
+.research-card h3 {
+  margin-top: 0;
+  font-size: 120%;
+  text-decoration: underline;
+}
 
-  .research-card h3 {
-    margin-top: 0; /* Remove default margin for heading */
-    font-size: 120%;
-    text-decoration: underline;
-  }
+.research-card h4 {
+  margin-top: 10px;
+}
 
-  .research-card h4 {
-    margin-top: 10px; /* Remove default margin for heading */
-  }
+.research-card p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
-  .research-card p {
-    margin-top: 5px; /* Remove default margin for heading */
-    margin-bottom: 5px; /* Remove default margin for heading */
-  }
+.research-card ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
 
-  .research-card ul {
-    margin-top: 5px; /* Remove default margin for heading */
-    margin-bottom: 5px; /* Remove default margin for heading */
-    font-size: 14px; /* Adjust the size as needed */
-  }
-  
-  .research-card a {
-    font-size: 10px;
-  }
-  
-  .research-card a:hover {
-    text-decoration: inherit; /* Hover effect for links */
-  }
-  
-  
+.research-card a {
+  font-size: 10px;
+}
+
+.research-card a:hover {
+  text-decoration: inherit;
+}

@@ -22,8 +22,11 @@ Education
 
 Work experience
 ======
-* <strong>2024-Now: Post-Doctoral Research in Behavioral Ethics</strong>
-  * <strong>University of Amsterdam</strong>
+* <strong>2026-Now: Post-Doctoral Researcher in Social Psychology</strong>
+  * <strong>Vrije Universiteit Amsterdam</strong>
+
+* 2023-2025: Post-Doctoral Researcher in Behavioral Ethics
+  * University of Amsterdam
 
 * 2021: Internship Policy Officer
   * Nederlandse Organisatie voor Wetenschappelijk Onderzoek
@@ -33,6 +36,9 @@ Work experience
 
 Service
 ======
+* 2025-2026: Member Research Committee
+  * Kurt Lewin Institute
+
 * 2020-2024: PhD Student-Representative
   * Kurt Lewin Institute
 
