@@ -1,13 +1,9 @@
-# Ignore the contents of the _site directory and other cache directories
+# Mac folder settings
+.DS_Store
+
+# Leftovers from the old Jekyll site (kept out of the repository)
 _site/
 .sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
+.jekyll-cache/
+node_modules/
 Gemfile.lock
-
-# Ingore files created by npm
-node_modules
-package-lock.json
